@@ -1,0 +1,152 @@
+<CalculatorWidget>
+    BoxLayout
+        orientation: "vertical"
+        size: root.width, root.height
+
+        TextInput:
+            id: input_box
+            text: "0"
+            multiline: False
+
+        GridLayout:
+            cols: 4
+            rows: 5
+
+            Button:
+                text:'C'
+                color: '#FF4500'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.clear()
+            
+            Button:
+                text:'DEL'
+                color: '#FF4500'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.remove_last()
+            
+            Button:
+                text:'%'
+                color: '#FF4500'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.sings("%")
+            
+            Button:
+                text:'/'
+                color: '#FF4500'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.sings("/")
+
+            Button:
+                text:'7'
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.button_value(7)
+            
+            Button:
+                text:'8'
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.button_value(8)
+            
+            Button:
+                text:'9'
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.button_value(9)
+
+            Button:
+                text:'*'
+                color: '#FF4500'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.sings("*")
+            
+            Button:
+                text:'4'
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.button_value(4)
+            
+            Button:
+                text:'5'
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.button_value(5)
+            
+            Button:
+                text:'6'
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.button_value(6)
+            
+            Button:
+                text:'-'
+                color: '#FF4500'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.sings("-")
+            
+            Button:
+                text:'1'
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.button_value(1)
+            
+            Button:
+                text:'2'
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.button_value(2)
+            
+            Button:
+                text:'3'
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.button_value(3)
+            
+            Button:
+                text:'+'
+                color: '#FF4500'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.sings("+")
+            
+            Button:
+                text:''
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+            
+            Button:
+                text:'0'
+                color: '#000000'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.button_value(0)
+            
+            Button:
+                text:','
+                color: '#FF4500'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.dot()
+            
+            Button:
+                text:'='
+                color: '#FF4500'
+                background_normal: ''
+                background_color: '#ffffff'
+                on_press: root.results()
